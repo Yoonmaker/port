@@ -1,0 +1,221 @@
+<!DOCTYPE>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Jaewon</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>    
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1><a href="#"><img src="images/logo.jpg" alt="portfolio"></a></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">Jaewon</a>
+                    <ul class="submenu">
+                        <li><a href="#">school</a></li>
+                        <li><a href="#">career</a></li>
+                        <li><a href="#">question</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Design</a>
+                        <ul class="submenu">
+                            <li><a href="#">logo design</a></li>  
+                            <li><a href="#">page design</a></li>
+                            <li><a href="#">web design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">video</a>
+                        <ul class="submenu">
+                            <li><a href="#">first grade</a></li>
+                            <li><a href="#">second grade</a></li>
+                            <li><a href="#">third grade</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SNS</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.instagram.com/1220jaewon/">instagram</a></li>
+                            <li><a href="https://www.youtube.com/channel/UC45uznNCRhk_Wow3LkhzGAg?view_as=subscriber">youtube</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100008938271215">facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+     
+        
+        
+        
+        
+        <!-- //header -->
+         <section id="banner">
+             
+            <div class="slidelist">
+                <div class="slideimg">  
+                    <img src="images/banner01.jpg" alt="이미지 부가설명">
+                </div>
+                <div class="slideimg"> 
+                    <img src="images/banner02.jpg" alt="이미지 부가설명">
+                </div>
+                <div class="slideimg">
+                    <img src="images/banner03.jpg" alt="이미지 부가설명">
+                </div>
+           
+           
+           
+           
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- // banner -->
+        <section id="contents"><img src="images/contents01.jpg" alt="명언">
+        
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- contents -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section id="mockup" class="clearfix">
+            <div class="cont1">
+            <div class="best clearfix">
+                <figure>
+                    <img src="images/GUI.jpg" alt="GUI">
+                    <figcaption>
+                    오팔대세
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/intropage02.jpg" alt="PHILIPS면도기">
+                    <figcaption>
+                    PHILIPS 면도기
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/intropage01.jpg" alt="시칠리아스파클링 인트로페이지">
+                    <figcaption>
+                    SICILIANA SPARKLING
+                    </figcaption>
+                </figure>
+                </div>
+            </div>
+            <div class="best clearfix">
+                <figure>
+                    <img src="images/thumbnail01.jpg" alt="썸네일1">
+                    <figcaption>
+                    전화데이트 썸네일
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/eventpage.jpg" alt="맥심아이스 이벤트페이지">
+                    <figcaption>
+                    Maxim ice 이벤트페이지
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/thumbnail02.jpg" alt="썸네일2">
+                    <figcaption>
+                    진비빔면 썸네일
+                    </figcaption>
+                </figure>
+                </div>
+        </section>
+        <!-- //contents -->
+         
+        <footer id="footer" class="clearfix">
+            <h2><img src="images/flogo%20copy.jpg" alt="로고"></h2>
+            <div class="foot">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>
+                <address>
+                    한강미디어(고) 디자이너:윤재원<br>
+                    주소: 서울특별시 양천구 목2동 목동중앙본로 30가길 55 핸드폰번호 : 010-4288-9078<br>
+                    무단배포신고 영등포구 3-2 개인정보취급방침
+                </address>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+    
+    
+   <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown(200);
+        });
+        $(".nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp(200);
+        });
+        
+        
+        var currentIndex = 0;
+        
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+               }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+        },3000);
+
+        
+    </script>
+    
+    
+    
+    
+    
+  
+    
+    
+</body>
+</html>
